@@ -1,4 +1,3 @@
-
-document.addEventListener("DOMContentLoaded", function() {
-    console.log("Melvin's Portfolio Website Loaded Successfully.");
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("Portfolio website loaded successfully.");
 });
