@@ -64,92 +64,64 @@ iframe {
   border-radius: 12px;
   margin-top: 1rem;
 }
-/* ==== Education Timeline ==== */
-.education-section {
+
+/* === Timeline Education === */
+.timeline-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.timeline-entry {
+  background-color: #1E1E1E;
+  padding: 1rem;
+  border-radius: 12px;
+  width: 45%;
+  box-shadow: 0 0 10px rgba(0, 173, 181, 0.2);
   text-align: center;
 }
 
-.timeline {
-  position: relative;
-  margin-top: 3rem;
-  padding: 2rem 0;
-}
-
-.timeline::before {
-  content: '';
-  position: absolute;
-  left: 50%;
-  width: 4px;
-  height: 100%;
-  background-color: #00ADB5;
-  transform: translateX(-50%);
-  z-index: 1;
-}
-
-.timeline-item {
-  position: relative;
-  width: 45%;
-  padding: 1rem;
-  background-color: #1E1E1E;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0, 173, 181, 0.2);
-  margin-bottom: 3rem;
-}
-
-.timeline-item.left {
-  left: 0;
-  margin-left: 0;
-  text-align: right;
-  float: left;
-}
-
-.timeline-item.right {
-  right: 0;
-  margin-right: 0;
-  text-align: left;
-  float: right;
-}
-
-.timeline-logo {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #121212;
-  border: 4px solid #00ADB5;
-  border-radius: 50%;
-  padding: 8px;
-  z-index: 2;
-}
-
-.timeline-logo img {
+.timeline-entry img {
   width: 80px;
-  height: auto;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 0.5rem;
 }
 
-.timeline-logo.bottom {
-  top: calc(100% + 40px);
+.timeline-entry .content {
+  color: #CCCCCC;
 }
 
-@media (max-width: 768px) {
-  .timeline-item,
-  .timeline-item.left,
-  .timeline-item.right {
-    float: none;
-    width: 100%;
-    text-align: center;
-  }
-
-  .timeline::before {
-    left: 8px;
-  }
-
-  .timeline-logo {
-    left: 10%;
-    transform: none;
-  }
-
-  .timeline-logo img {
-    width: 60px;
-  }
+/* === Skills Section === */
+.skills-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
 }
 
+.skill-box {
+  background-color: #1E1E1E;
+  padding: 1.5rem;
+  border-radius: 12px;
+  flex: 1 1 45%;
+  box-shadow: 0 0 10px rgba(0, 173, 181, 0.3);
+}
+
+.skill-box h3 {
+  color: #00ADB5;
+  margin-bottom: 1rem;
+}
+
+.skill-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skill-box ul li {
+  margin-bottom: 0.5rem;
+}
